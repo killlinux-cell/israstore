@@ -102,7 +102,7 @@ export default{
 
 .grid-item {
   background-color: #e5e4e4; 
-  padding: 20px; 
+  /* padding: 20px; */ 
   text-align: center;
 }
 .center-block {
@@ -180,8 +180,27 @@ export default{
 
 .food-img {
   width: 24vw;
-  height: 12vw;
+  height: 15vw;
   object-fit: cover;
+}
+.food-price{
+position: absolute;
+  bottom: 3vw;
+  left: 2rem;
+  width: 70%;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+  
+}
+.gallery-link:hover .food-price{
+  width: 100%;
+  transition: width 1.5s 0.5s;
 }
 
 .food-name {
@@ -192,13 +211,13 @@ export default{
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  color: #fff;
+  color: #000;
   width: 0;
   overflow: hidden;
   transition: width 0.3s;
 }
 
-.gallery-link:hover .food-name {
+.gallery-link:hover .food-name{
   width: 100%;
   transition: width 1.5s 0.5s;
 }
